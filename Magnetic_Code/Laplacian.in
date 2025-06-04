@@ -1,0 +1,21 @@
+501	!grid size (one side of mesh grid) [grid units]
+0.1	!physical length of one mesh point [meters]
+15.0	!dimr -> spacecraft radius if spherical [grid units]
+50.0	!dims -> spacecraft radius if cylindrical [grid units]
+15.0	!dimx -> spacecraft x dimension if Cartesian [grid units]
+30.0	!dimy -> spacecraft y dimension if Cartesian [grid units]
+50.0	!dimz -> spacecraft z dimension if Cartesian [grid units]
+1000    !Scaling of the field
+5	!boundary condition choice:
+		!(1) rectangular surface
+		!(2) rectangular volume
+		!(3) spherical surface
+		!(4) cylindrical surface
+		!(5) planes at ends of cylinder
+
+
+
+
+!Write out: delta = m, dims, cntr, dimz
+
+TODO CHECK INPUT ENERGY WHEN PROGRAMS STARTS OTHERWISE QWE HAVE TO WAIT FOR IT TO ENTER BUBBLE WHICH MIGHT NEVER HAPPEN

@@ -1,0 +1,12 @@
+
+Here's how to run, make sure you're in the ParticlePropogation file in your terminal.
+
+make clean
+
+make 
+
+./particlePropagation density.1138_SI.dat Bfield.dat input.dat
+                        SRIM File         Bfield data  Inputs
+
+
+Make sure to always have a folder names output in the ParticlePropogation folder!! 

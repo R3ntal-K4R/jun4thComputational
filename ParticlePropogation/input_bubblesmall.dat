@@ -1,0 +1,18 @@
+1
+9.7 9.7 4.0
+7514600.851994 0.198012 0.463297
+1 1
+1.0e-12 	2.000e-03 
+2000 
+5
+1
+0
+//x y z
+//vx vy vz
+//charge, mass (in number of subatomic particles)
+//dt, tmax
+//stepout
+//radius of bubble
+//switch to change stepout when inside bubble
+//straggling switch (1 for straggling, else for no straggling)
+//Note: USE SMALLER dt FOR ELECTRONS!
