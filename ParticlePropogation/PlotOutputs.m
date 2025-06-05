@@ -3,7 +3,10 @@ close all; clear all;
 plot = figure("inverthardcopy", "off");
 
 low_index = 1;
-high_index = 229;
+output_folder = 'output/';
+file_list = dir(fullfile(output_folder, '*_output.dat')); 
+high_index = length(file_list)/2;
+
 
 directory_range = low_index:high_index;
 colors = [[0,0,0];[1,0,0];[0,0,1];[0,0.85,0];[136/255,46/255,114/255]; ...
