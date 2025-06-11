@@ -52,6 +52,23 @@ int main(int argc, char ** argv) {
 
   printf("Output will be saved in: %s\n", output_dir);
 
+  // Create the log directory
+  char log_dir_path[512];
+  snprintf(log_dir_path, sizeof(log_dir_path), "%s/log", output_dir);
+  if (mkdir(log_dir_path, 0777) == -1 && errno != EEXIST) {
+      perror("Error creating log directory");
+      exit(1);
+  }
+
+  // Redirect stdout to a file in the log directory
+  char log_file_path[512];
+  snprintf(log_file_path, sizeof(log_file_path), "%s/terminal_output.log", log_dir_path);
+  if (freopen(log_file_path, "w", stdout) == NULL) {
+      fprintf(stderr, "Error redirecting stdout to file: %s\n", strerror(errno));
+      exit(1);
+  }
+  setbuf(stdout, NULL); // Disable buffering
+
 
 #ifdef ENABLE_BFIELD
   //create a new spacecraft/magnetic field
