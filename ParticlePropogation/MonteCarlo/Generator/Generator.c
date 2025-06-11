@@ -226,7 +226,7 @@ void main(int argc, char **argv){
 	int choice_x = 1;
 	srand((unsigned) time(&t)); //seed random generator
 
-	const char filename[] = "../../input.dat";
+	const char filename[] = "../../250input.dat";
 	output_file = fopen(filename, "w"); //open the file
 	fprintf(output_file,"%d\n",run_number); //write the initial run number
 	printf("%d\n",run_number);

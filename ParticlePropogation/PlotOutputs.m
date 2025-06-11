@@ -3,10 +3,8 @@ close all; clear all;
 plot = figure("inverthardcopy", "off");
 
 low_index = 1;
-output_folder = 'output/';
-file_list = dir(fullfile(output_folder, '*_output.dat')); 
-high_index = length(file_list)/2;
-
+high_index = 400;
+% '229' default
 
 directory_range = low_index:high_index;
 colors = [[0,0,0];[1,0,0];[0,0,1];[0,0.85,0];[136/255,46/255,114/255]; ...
@@ -97,10 +95,8 @@ for i = directory_range
  surf(sph_rad*sx+center, sph_rad*sy+center, sph_rad*sz+center+cyl_hei/2+sph_rad, sphere_colors, "FaceColor", "none"); % Top  sphere
  surf(sph_rad*sx+center, sph_rad*sy+center, sph_rad*sz+center-cyl_hei/2-sph_rad, sphere_colors, "FaceColor", "none"); % Bottom sphere
 
- axis([-grid_SI/4 grid_SI+grid_SI/4 -grid_SI/4 grid_SI+grid_SI/4 -grid_SI/4 grid_SI+grid_SI/4]);
- title("Particle Trajectories", "fontsize", 16);
-% set(gca,"fontsize", 16, "color", [0.77, 0.77, 0.77]);
-% view(-30, 15);  % diagonal view
+%axis([-grid_SI/4 grid_SI+grid_SI/4 -grid_SI/4 grid_SI+grid_SI/4 -grid_SI/4 grid_SI+grid_SI/4]);100_ou // err 2025/3/26
+ axis([-grid_SI/4, grid_SI+grid_SI/4, -grid_SI/4, grid_SI+grid_SI/4, -grid_SI/4, grid_SI+grid_SI/4]);
  view(0, 0);      % side view
 % view(0, 90);    % top view
  hold off;
