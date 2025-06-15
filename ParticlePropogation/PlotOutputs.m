@@ -3,7 +3,7 @@ close all; clear all;
 plot = figure("inverthardcopy", "off");
 
 low_index = 1;
-high_index = 400;
+high_index = 12;
 % '229' default
 
 directory_range = low_index:high_index;
