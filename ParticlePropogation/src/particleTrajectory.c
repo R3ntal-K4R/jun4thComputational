@@ -173,7 +173,7 @@ void propagate(particle p, int current_run_number, spacecraft s, const char* out
   printf("accel init %12.6e %12.6e %12.6e\n",p.ax,p.ay,p.az); 
   printf("B-field Multiplier: %4.3e\n", s.B_multiplier); 
 
-  int original_stepout;
+  int original_stepout = p.stepout;
   FILE *ptfileout; // output file
   char fileout_name[512]; 
   snprintf(fileout_name, sizeof(fileout_name), "%s/%d_output.dat", output_dir_path, current_run_number); 
