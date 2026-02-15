@@ -1,0 +1,26 @@
+4
+0.100000 14.575164 12.684196
+2185190.372697 850474.332211 400643.169968
+0.100000 20.888484 10.286984
+-113630.183446 859387.331038 -61966.731995
+0.100000 13.973258 4.215285
+1598031.226585 707290.372513 -1613974.916822
+0.100000 4.190561 17.049052
+629575.600010 -1038527.703741 922558.821469
+26    5.585e+01
+1.0e-11 	6.557e+15
+8000 
+5
+1.000
+1
+0
+//x y z
+//vx vy vz
+//charge, mass (in number of subatomic particles)
+//dt, tmax
+//stepout
+//radius of bubble
+//B-field multiplier
+//switch to change stepout when inside bubble
+//straggling switch (1 for straggling, else for no straggling)
+//Note: USE SMALLER dt FOR ELECTRONS!
