@@ -3,7 +3,7 @@ close all; clear all;
 plot = figure("inverthardcopy", "off");
 
 low_index = 1;
-high_index = 50;
+high_index = 4;
 
   file_path = 'output/2_output.dat';
   header_lines = 1;  % Number of header lines to skip
